@@ -88,6 +88,8 @@ public class JavaApplication9 {
                             if(nama != null && inv.getNama().equalsIgnoreCase(nama)){
                                 System.out.println("Data ditemukan");
                                 System.out.println("Nama baru =");
+                                String nama = sc.next();
+                                System.out.println("");
                             }
                         case 4:
                             System.out.println("4. Menu Cetak Data");
@@ -101,14 +103,59 @@ public class JavaApplication9 {
                             }
                 }
                 break;
-                }while(pilih2!=3);
-                
+                }while(pilih2!=2);
                     
+                case 2:
+                    System.out.println("Sub Menu Beli Produk");
+                    System.out.println("1. Tambah Produk");
+                    System.out.println("2. Hapus Produk");
+                    System.out.println("3. Update Data");
+                    System.out.println("4. Cetak Data");
+                    System.out.println("5. Query");
+                    System.out.println("Pilih = ");
+                    pilih2 = sc.nextInt();
+                    switch(pilih2){
+                        case 1:
+                            System.out.println("Menu Tambah Produk");
+                            System.out.println("Masukkan Nama =");
+                            sc = new Scanner(System.in);
+                            String nama = sc.nextLine();
+                            System.out.println("Masukkan ");
+                            
+                            break;
+                        case 2:
+                            System.out.println("Menu Hapus Produk");
+                            System.out.println("Masukkan Produk");
+                            if(){
+                            System.out.println("Data Ditemukan");
+                            System.out.println("Dihapus? 1.Ya, 2.Tidak");
+                            System.out.println("Pilih =");
+                            pilih2 = sc.nextInt();
+                            if(pilih2==1){
+                                System.out.println("Data dihapus...");
+                            }else{
+                                System.out.println("Batal hapus...");
+                            }
+                            }else{
+                                System.out.println("Data tidak ada...");
+                            }
+                            break;
+                        case 3:
+                            System.out.println("Menu Update Data");
+                            System.out.println("Masukkan Produk");
+                            
+                            break;
+                        case 4:
+                            System.out.println("Menu Cetak Data");
+                            
+                            break;
+                    }
                     
-                    
-                    
+                    break;
+                case 3:
+                    System.out.println("Terima Kasih...");
             }
-        }while(pilih!=4);
+        }while(pilih!=3);
         
         
         
