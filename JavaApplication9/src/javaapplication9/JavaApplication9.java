@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package javaapplication9;
 
-/**
- *
- * @author randy
- */
+
 import java.util.Scanner;
 public class JavaApplication9 {
 
@@ -87,9 +80,32 @@ public class JavaApplication9 {
                                 System.out.println("Data tidak ditemukan");
                             }
                             break;
+                        case 3:
+                            System.out.println("3. Menu Update Data");
+                            System.out.println("Masukkan Nama : ");
+                            sc = new Scanner(System.in);
+                            nama = sc.nextLine();
+                            if(nama != null && inv.getNama().equalsIgnoreCase(nama)){
+                                System.out.println("Data ditemukan");
+                                System.out.println("Nama baru =");
+                            }
+                        case 4:
+                            System.out.println("4. Menu Cetak Data");
+                            if(nama != null){
+                            }
+                        case 5:
+                            System.out.println("5. Menu Query Data");
+                            if(nama != null){
+                            }else{
+                                System.out.println("Data kosong...");
+                            }
                 }
                 break;
                 }while(pilih2!=3);
+                
+                    
+                    
+                    
                     
             }
         }while(pilih!=4);
