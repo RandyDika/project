@@ -14,9 +14,11 @@ public class cProduk {
     //rtn dalam persentase per tahun;
     //minPem = minimum pembelian;
     //jp = jenis produk
-    cProduk(){
-        hargaPerUnit = 1000;
-        minPem = 5000;
+    cProduk(String n, String j, double h, double m){
+        nama = n;
+        jp = j;
+        hargaPerUnit = h;
+        minPem = m;
     }
     public void setNama(String s){
         nama = s;
