@@ -8,11 +8,11 @@ package javaapplication9;
  *
  * @author randy
  */
-public class cInvestor {
+public class cUser {
     private String nama, kwn, alamat; //buat class reksadana untuk menampung jumlah reksadana yang dia miliki
     private int age;
     private double uang;
-    cInvestor(String s, String k, String a, int u, boolean r){
+    cUser(String s, String k, String a, int u, boolean r){
        //r merupakan referral u => umur
        nama = s;
        kwn = k;
